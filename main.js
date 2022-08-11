@@ -1,15 +1,20 @@
 let cartIcon=document.querySelector('#cart-icon');
 // console.log("cartIcon is", cartIcon);
-let cart=document.querySelector('#random')
+let cart=document.querySelector('.cart').classList
 let closeCart=document.querySelector('#close-cart')
 
-console.log("working",cartIcon)
+console.log("working",cart)
 
-cartIcon && cart ? cartIcon.onclick=()=>{
+// cartIcon && cart ? cartIcon.onclick=()=>{
+//     //cart.classList.add("active")
+//     cart.classList.add("active")
+//     console.log('if cond');
+// }:null
+cartIcon.onclick=()=>{
     //cart.classList.add("active")
-    cart.classList.add("active")
+    cart.add("active")
     console.log('if cond');
-}:null
+}
  
 
 // cart &&cartIcon ? alert('good'):null
@@ -35,6 +40,7 @@ cartIcon && cart ? cartIcon.onclick=()=>{
     // }
 
 
-// closeCart.onClick=()=>{
-//     cart.classList.remove("active")
-// }
+closeCart.onclick=()=>{
+    console.log('close');
+    cart.remove("active")
+}
