@@ -1,10 +1,40 @@
-let cartIcon=document.querySelector('.bx bx-shopping-bag')
-let cart=document.querySelector('.cart')
+let cartIcon=document.querySelector('#cart-icon');
+// console.log("cartIcon is", cartIcon);
+let cart=document.querySelector('#random')
 let closeCart=document.querySelector('#close-cart')
 
-cartIcon.onClick=()=>{
+console.log("working",cartIcon)
+
+cartIcon && cart ? cartIcon.onclick=()=>{
+    //cart.classList.add("active")
     cart.classList.add("active")
-}
-closeCart.onClick=()=>{
-    cart.classList.remove("active")
-}
+    console.log('if cond');
+}:null
+ 
+
+// cart &&cartIcon ? alert('good'):null
+
+// cartIcon ?  cartIcon.onclick = () =>{
+//     cart ? cart.onclick=() =>{
+//         console.log("working:", cart);
+//         cart.classList.add("active")}
+//      : null;
+// } : null;
+
+
+
+    // if(cartIcon){
+    //     cartIcon.onclick=()=>{
+    //         if(cart){
+    //          cart.classList.add("active")}
+    //          else{
+    //             console.log("not working")
+    //          }
+        
+    //     }
+    // }
+
+
+// closeCart.onClick=()=>{
+//     cart.classList.remove("active")
+// }
