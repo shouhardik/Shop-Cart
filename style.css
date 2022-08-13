@@ -201,3 +201,33 @@ section{
 .add-cart:hover{
     background: hsl(249, 17, 17%);
 }
+
+@media (max-width:100px){
+    .nav{
+        padding:15px;
+    }
+    section{
+        padding: 3rem 0 2rem;
+    }
+  
+}
+@media (max-width:400px){
+    .nav{
+        padding: 11px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .cart{
+        width: 320px;
+    }
+}
+
+@media (max-width:360px){
+    .shop{
+        margin-top: 1rem !important;
+    }
+    .cart{
+        width: 280px;
+    }
+}
